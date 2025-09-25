@@ -1,0 +1,89 @@
+body {
+    background-color: #000;
+    background-image: url("images/moss 1.jpg");
+    background-attachment: fixed;
+    /* background-repeat: repeat-y; */
+    background-size: 400px;
+    margin: 0;
+    padding: 0;
+    font-family:  "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    /* Inter Weight: 100 – 900 */
+    font-style: normal;
+
+}
+
+/* only us id once per page, use a hashtag */
+#wrapper {
+    width: 80%;
+    background-color: hsla(0, 0%, 100%, 0.7); 
+    margin: 40px auto;
+    padding: 20px 100px;
+    border-radius: 8px;
+}
+
+header h1 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 66px;
+  color: #0715aa;
+}
+
+header h2 {
+  font-family: "Bitcount Ink", system-ui;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: #bf0404;
+}
+nav {
+  display: flex;
+  gap: 14px;
+  padding: 10px 0 22px 0;
+  border-bottom: 1px solid #00000022;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+  padding: 8px 14px;
+  border-radius: 10px;
+  border: 1px solid #00000022;
+}
+
+nav a.active { background-color: #000000; color: #ffffff; border-color: #000000; }
+
+main { padding: 18px 0 10px 0; }
+
+footer {
+  margin-top: 26px;
+  padding-top: 14px;
+  border-top: 1px solid #00000022;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+/* use them as many times as you like, use period */
+span.wow {
+    color: #f00;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+main p.types {
+    font-size: 20px;
+    line-height: 26px;
+}
+
+table {
+  width: auto;
+  border-collapse:collapse;
+  margin:20px 0;
+  background-color: #0eecda9a;
+  text-align:center;
+}
+
