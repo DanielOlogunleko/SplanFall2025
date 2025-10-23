@@ -1,0 +1,126 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* END border-box fix */
+
+body {
+  background-color: beige;
+  padding: 0px;
+  margin: 0px;
+  color:rgba(249, 250, 215, 0.778);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+#wrapper {
+  max-width: 1200px;
+  background-color: aliceblue;
+  border: solid #eaff00 10px;
+  /* center the wrapper */
+  margin: 10px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#wrapper>* {
+  padding: 20px;
+}
+
+header {
+  background: skyblue;
+  order: 1;
+  flex: 0 0 100%;
+  opacity:0.8;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+main {
+  background: slategray;
+  order: 3;
+  flex: 1 1 500px;
+}
+/*subscribe button*/
+div.buttonAbsolute {
+  background-color: rgb(255,208,0);
+  color: rgb(0,0,0);
+  text-align: center;
+  width: 130px;
+  opacity: 1.0px;
+  padding: 15px;
+  border-radius: 125px;
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+
+}
+ div.buttonRelative {
+  background-color: rgb(255,208,0);
+  width: 100px;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  position: relative;
+  left: 40px;
+  z-index: 3;
+}
+
+div.buttonIntroduction{
+  background-color: rgb(255,208,0);
+  width: 100px;
+  padding: 10px;
+  color: black;
+  text-align: auto;
+  position: relative;
+  left: 40px;
+  z-index: 3;
+}
+
+nav {
+  background: cadetblue;
+  order: 2;
+  flex: 1 0 200px;
+}
+
+aside {
+  background: seagreen;
+  order: 4;
+  flex: 1 0 200px;
+}
+
+footer {
+  background: darkslateblue;
+  order: 5;
+  flex: 0 0 100%;
+  border: 1px solid #e6e0d1;
+  border-radius: 16px;
+}
+
+h1, h2, h3{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color:darkred;
+  margin: 0 0;
+}
+
+img{
+  width: 300px;
+    height: 300px;
+    border: solid #f00;
+    background-color: #0f0;
+    
+}
