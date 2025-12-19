@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Animation — Four Symbols (Interactive Hub)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Interactive animation hub for the Four Mythological Creatures of China." />
+
+  <!-- Google Fonts (2+) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Saira+Extra+Condensed:wght@200;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="wrapper nav" aria-label="Primary navigation">
+      <div class="brand">
+        <div class="holo-logo logo-main" aria-hidden="true"></div>
+        <div class="brand-text">
+          <div class="title">Four Symbols</div>
+          <div class="subtitle">Interactive Animation Hub</div>
+        </div>
+      </div>
+
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a class="active" href="animation.html" aria-current="page">Animation</a>
+        <a href="guardian.html">Guardians</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="content" class="wrapper">
+    <section class="card mt-1">
+      <h1 class="display">Choose a Guardian</h1>
+      <p class="small">Use the filter buttons, then play with the constellation canvas .</p>
+    </section>
+
+    <!-- jQuery interaction -->
+    <section class="card mt-1">
+      <h2>Filter Guardians</h2>
+      <div class="filter-row" role="group" aria-label="Guardian filters">
+        <button class="chip-btn is-on" type="button" data-filter="all">All</button>
+        <button class="chip-btn" type="button" data-filter="east">East</button>
+        <button class="chip-btn" type="button" data-filter="south">South</button>
+        <button class="chip-btn" type="button" data-filter="west">West</button>
+        <button class="chip-btn" type="button" data-filter="north">North</button>
+      </div>
+    </section>
+
+    <section class="beast-grid mt-1" aria-label="Animated guardian cards">
+
+  <a class="beast-link" href="guardian.html#azure-dragon" aria-label="Go to Azure Dragon story">
+    <article class="beast azuredragon" data-direction="east">
+      <span class="chip">East • Spring</span>
+      <span class="corner-icon icon-azure" aria-hidden="true"></span>
+      <div class="inner">
+        <h3>Azure Dragon (青龙)</h3>
+        <p>Wood • Growth • Protection</p>
+      </div>
+    </article>
+  </a>
+
+  <a class="beast-link" href="guardian.html#vermilion-bird" aria-label="Go to Vermilion Bird story">
+    <article class="beast vermilion" data-direction="south">
+      <span class="chip">South • Summer</span>
+      <span class="corner-icon icon-vermilion" aria-hidden="true"></span>
+      <div class="inner">
+        <h3>Vermilion Bird (朱雀)</h3>
+        <p>Fire • Vitality • Auspice</p>
+      </div>
+    </article>
+  </a>
+
+  <a class="beast-link" href="guardian.html#white-tiger" aria-label="Go to White Tiger story">
+    <article class="beast whitetiger" data-direction="west">
+      <span class="chip">West • Autumn</span>
+      <span class="corner-icon icon-tiger" aria-hidden="true"></span>
+      <div class="inner">
+        <h3>White Tiger (白虎)</h3>
+        <p>Metal • Justice • Courage</p>
+      </div>
+    </article>
+  </a>
+
+  <a class="beast-link" href="guardian.html#black-tortoise" aria-label="Go to Black Tortoise story">
+    <article class="beast blacktortoise" data-direction="north">
+      <span class="chip">North • Winter</span>
+      <span class="corner-icon icon-tortoise" aria-hidden="true"></span>
+      <div class="inner">
+        <h3>Black Tortoise (玄武)</h3>
+        <p>Water • Endurance • Balance</p>
+      </div>
+    </article>
+  </a>
+
+</section>
+
+    <!-- p5.js interaction -->
+    <section class="card mt-1">
+      <h2>Constellation Canvas</h2>
+      <p class="small">
+        Move your mouse to bend “cosmic wind.” Click to switch the active guardian constellation.
+      </p>
+
+      <div class="canvas-shell" aria-label="p5 canvas container">
+        <div id="p5-holder"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrapper site-footer">
+    <p class="sources small">
+      Sources:
+      <a href="https://www.ancient-origins.net/myths-legends-asia/four-mythological-symbols-china-001792" target="_blank" rel="noopener">Ancient Origins</a>
+      •
+      <a href="https://philately.ctt.gov.mo/uploads/stampimages/mac202305pageeng.pdf" target="_blank" rel="noopener">Macao Post &amp; Telecommunications (PDF)</a>
+    </p>
+    <p class="small">© 2025 <strong>Daniel Ologunleko</strong> — Web Production Final Project.</p>
+  </footer>
+
+  <!-- jQuery (required for your jQuery interaction) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- p5.js -->
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.4/lib/p5.min.js"></script>
+
+  <script defer src="main.js"></script>
+  <script defer src="sketch.js"></script>
+</body>
+</html>
